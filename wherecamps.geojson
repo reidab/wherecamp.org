@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "startDate": "2013-09-27",
+        "event": "WhereCampPDX 6",
+        "venueName": "Metro Regional Center",
+        "endDate": "2013-09-27",
+        "url": "http://wherecamppdx.org",
+        "description": "geonerdery abounds!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6602292060852,
+          45.52727616343882
+        ]
+      }
+    }
+  ]
+}
