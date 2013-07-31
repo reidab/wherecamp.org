@@ -99,7 +99,8 @@ var WhereCamp = (function ($, L) {
     var map = new L.Map(mapDiv[0], {
         center: venueLatLng,
         zoom: zoom,
-        zoomControl: false
+        zoomControl: false,
+        scrollWheelZoom: false
     });
 
     map.addLayer(layer);
@@ -128,7 +129,8 @@ var WhereCamp = (function ($, L) {
     var layer = chooseLayer("toner-lite");
 
     var map = new L.Map(mapDiv[0], {
-      zoomControl: false
+      zoomControl: false,
+      scrollWheelZoom: false
     });
     map.setView([51.505, -0.09], 12);
 
