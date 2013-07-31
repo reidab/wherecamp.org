@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Kelly+Slab);
+
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -74,12 +76,14 @@ body {
    =================== */
 
 .footer-container {
-    border-top: 20px solid #ccc;
+    border-top: 20px solid #092820;
+    border-top: 20px solid rgba(9, 42, 34, 0.9);
 }
 
 .footer-container,
 .main aside {
-    background: #eee;
+    background: #0a3d30;
+    background: rgba(9, 42, 34, 0.8);
 }
 
 /* ==============
@@ -133,10 +137,127 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+
+html {
+  background-color: #148a6c;
+  background-image: url("../img/cartographer_green.png");
+  color: #eeeeee;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-ms-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  html {
+    -webkit-background-size: 500px auto;
+    -moz-background-size: 500px auto;
+    -o-background-size: 500px auto;
+    background-size: 500px auto;
+    background-image: url("../img/cartographer_green@2x.png");
+  }
+}
+
 header {
   text-align: center;
 }
 
+h1, h2 {
+  margin: 0.5em 0 0.2em;
+  line-height: 1em;
+  font-family: "Kelly Slab";
+}
+
+.tagline {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tagline,
+.leaflet-popup {
+  color: #092820;
+}
+
+.event {
+  position: relative;
+  margin-top: 1em;
+  height: 300px;
+  border: 4px solid #092820;
+  border: 4px solid rgba(9, 42, 34, 0.9);
+}
+
+.event .map {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.event .info {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 500;
+}
+
+.info .org,
+.info .street-address,
+.info .extended-address,
+.info .postal-code,
+.leaflet-popup .extra_comma,
+.geo {
+  display: none
+}
+
+.org,
+.event .website-link {
+  font-weight: bold;
+}
+
+a {
+  color: #fff;
+}
+
+.event .country-name {
+  display: inline;
+}
+
+.event h3,
+.event .when,
+.event .where,
+.event .website-link {
+  display: inline-block;
+  float: left;
+  clear: left;
+  margin: 0;
+  /* transform:         rotate(-4deg) ;*/
+  /* -webkit-transform: rotate(-4deg) ;*/
+  /* -moz-transform:    rotate(-4deg) ;*/
+  /* -o-transform:      rotate(-4deg) ;*/
+  /* -ms-transform:     rotate(-4deg) ;*/
+}
+
+.event h3 {
+  font-size: 1.4em;
+  background: #35c199;
+  padding: .75em 1em .5em .5em;
+  margin-bottom: .5em;
+}
+
+.event .when,
+.event .website-link {
+  color: #35c199;
+  background: #fff;
+  padding: .4em 1em .25em .5em;
+}
+
+.event .where {
+  background: #35c199;
+  padding: .4em 1em .25em .5em;
+  margin-bottom: 1em;
+}
+
+.event a {
+  text-decoration: none;
+}
 
 
 
