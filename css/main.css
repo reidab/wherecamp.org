@@ -194,6 +194,10 @@ h1, h2 {
   position: absolute;
 }
 
+.past-map {
+  height: 400px;
+}
+
 .event .info {
   top: 0;
   left: 0;

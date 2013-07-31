@@ -21,6 +21,7 @@ var WhereCamp = (function ($, L) {
   };
 
   function processGeoJSON(json) {
+    var pastMarkers = [];
     $(json.features).sort(sortDate).each(function(i,feature) {
       var info = extractEventInfo(feature);
       var eventDiv = $(eventTemplate(info));
@@ -30,13 +31,16 @@ var WhereCamp = (function ($, L) {
         if(info.coordinates) {
           var mapDiv = $('<div class="map"></div>');
           eventDiv.append(mapDiv);
-          var map = initMap(mapDiv, info, eventDiv.find(".where").html());
+          var map = initUpcomingMap(mapDiv, info, eventDiv.find(".where").html());
         }
       } else {
         past.prepend(eventDiv);
+        if(info.coordinates)
+          pastMarkers.push(pastMarker(info));
       }
-
     });
+
+    initPastMap(pastMarkers);
   };
 
   function extractEventInfo(feature) {
@@ -87,7 +91,7 @@ var WhereCamp = (function ($, L) {
     };
   }
 
-  function initMap(mapDiv, info, popupContent) {
+  function initUpcomingMap(mapDiv, info, popupContent) {
     var venueLatLng = new L.LatLng(info.coordinates.latitude, info.coordinates.longitude);
     var zoom        = info.mapZoom || 12;
     var layer       = chooseLayer(info.mapTiles);
@@ -116,6 +120,27 @@ var WhereCamp = (function ($, L) {
     return map;
   }
 
+  function initPastMap(markers) {
+    var mapDiv = $('<div class="past-map"></div>');
+    past.prepend(mapDiv);
+
+    var layer = chooseLayer("toner-lite");
+
+    var map = new L.Map(mapDiv[0], {
+      zoomControl: false
+    });
+    map.setView([51.505, -0.09], 2);
+
+    map.addLayer(layer);
+    map.addControl(new L.Control.Zoom({position: "bottomright"}));
+
+    var markerGroup = L.featureGroup(markers)
+    markerGroup.addTo(map);
+    map.fitBounds(markerGroup.getBounds());
+
+    return map;
+  }
+
   function chooseLayer(mapTiles) {
     var tileString  = mapTiles || "terrain";
 
@@ -128,6 +153,15 @@ var WhereCamp = (function ($, L) {
     }
 
     return layer;
+  }
+
+  function pastMarker(info) {
+    return L.circle([info.coordinates.latitude, info.coordinates.longitude], 500, {
+        color: info.color,
+        fillColor: info.color,
+        fillOpacity: 1,
+        opacity: 1
+    })
   }
 
 
