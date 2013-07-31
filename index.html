@@ -33,12 +33,12 @@
         </header>
 
         <div class="main wrapper clearfix">
+          <h2>Upcoming Events</h2>
           <div class="upcoming">
-            <h2>Upcoming Events</h2>
-
           </div>
+
+          <h2>Past Events</h2>
           <div class="past">
-            <h2>Past Events</h2>
           </div>
 
           <!--<aside>
@@ -64,9 +64,9 @@
         <script id="event_template" type="text/html">
           {{#color}}
           <style type="text/css">
+            #{{id}},
             #{{id}} h3,
-            #{{id}} .where,
-            #{{id}} .map {
+            #{{id}} .where {
               background: {{color}};
             }
 
@@ -78,7 +78,7 @@
           {{/color}}
 
           <article id="{{id}}" class="vevent event">
-            <div class="info">
+            <div class="info clearfix">
               <h3 class="what">
                 {{#url}}
                 <a href="{{url}}" class="url">

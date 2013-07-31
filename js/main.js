@@ -27,15 +27,15 @@ var WhereCamp = (function ($, L) {
 
       if(moment(info.endDate || 0).isAfter(moment().add('days',1), 'day')) {
         upcoming.append(eventDiv);
+        if(info.coordinates) {
+          var mapDiv = $('<div class="map"></div>');
+          eventDiv.append(mapDiv);
+          var map = initMap(mapDiv, info, eventDiv.find(".where").html());
+        }
       } else {
-        past.append(eventDiv);
+        past.prepend(eventDiv);
       }
 
-      if(info.coordinates) {
-        var mapDiv = $('<div class="map"></div>');
-        eventDiv.append(mapDiv);
-        var map = initMap(mapDiv, info, eventDiv.find(".where").html());
-      }
     });
   };
 
@@ -101,7 +101,11 @@ var WhereCamp = (function ($, L) {
     map.addLayer(layer);
 
     map.addControl(new L.Control.Zoom({position: "bottomright"}));
-    map.panBy([-1 * (map.getContainer().clientWidth / 6),-50])
+    if($(window).width() > 640) {
+      map.panBy([-1 * (map.getContainer().clientWidth / 6),-50])
+    } else {
+      map.panBy([0,-130])
+    }
 
     // var marker = L.marker(venueLatLng).addTo(map);
     var popup = L.popup({ closeButton: false, closeOnClick: false })
