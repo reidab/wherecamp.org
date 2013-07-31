@@ -4,17 +4,19 @@
     {
       "type": "Feature",
       "properties": {
-        "event": "WhereCampPDX 6",
+        "eventName": "WhereCampPDX 6",
         "url": "http://wherecamppdx.org",
-        "description": "geonerdery abounds!",
         "startDate": "2013-09-27",
-        "endDate": "2013-09-27",
+        "endDate": "2013-09-29",
         "venueName": "Metro Regional Center",
         "venueStreetAddress": "600 NE Grand Ave",
-        "venueCity": "Portland",
+        "venueLocality": "Portland",
         "venueRegion": "Oregon",
         "venuePostalCode": "97232",
-        "venueCountry": "United States"
+        "venueCountry": "USA",
+        "color": "#6544b2",
+        "mapTiles": "caged.pdx",
+        "mapZoom": 13
       },
       "geometry": {
         "type": "Point",

@@ -12,6 +12,10 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css">
+        <!--[if lte IE 8]>
+          <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' />
+        <![endif]-->
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -32,33 +36,6 @@
           <div class="upcoming">
             <h2>Upcoming Events</h2>
 
-            <article id="hcalendar-WhereCampPDX-6" class="vevent">
-              <h3 class="what">
-                <a href="http://wherecamppdx.org" class="url">
-                  <span class="summary">WhereCampPDX 6</span>
-                </a>
-              </h3>
-
-              <div class="when">
-                <time class="dtstart" datetime="2013-09-27T18:00-07:00">September 27th 6pm</time>–<time class="dtend" datetime="2013-09-29T18:00-07:00">29th 6pm, 2013</time>
-              </div>
-
-              <div class="where location adr">
-                <div class="org">Metro Regional Center</org>
-                <div class="street-address">600 NE Grand Ave.</div>
-                <!-- <div class="extended-address">Suite 207</div>-->
-                <span class="locality">Portland</span>,
-                <span class="region">OR</span>
-                <span class="postal-code">97232</span>
-                <div class="country-name">U.S.A.</div>
-                <div class="geo">
-                 <abbr class="latitude" title="45.527532">N 45° 31' 39.1152"</abbr>
-                 <abbr class="longitude" title="-122.660508">W 122° 39' 37.8282"</abbr>
-                </div>
-              </div>
-
-              <p class="description">geonerdery abounds!</p>
-            </article>
           </div>
           <div class="past">
             <h2>Past Events</h2>
@@ -76,8 +53,78 @@
             </footer>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.fittext.js"></script>
+        <script src="js/vendor/mustache.js"></script>
+        <script src="js/vendor/moment.min.js"></script>
+        <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
+
+        <script id="event_template" type="text/html">
+          {{#color}}
+          <style type="text/css">
+            #{{id}} h3,
+            #{{id}} .where,
+            #{{id}} .map {
+              background: {{color}};
+            }
+
+            #{{id}} .when,
+            #{{id}} .website-link {
+              color: {{color}};
+            }
+          </style>
+          {{/color}}
+
+          <article id="{{id}}" class="vevent event">
+            <div class="info">
+              <h3 class="what">
+                {{#url}}
+                <a href="{{url}}" class="url">
+                {{/url}}
+                  <span class="summary">{{eventName}}</span>
+                {{#url}}
+                </a>
+                {{/url}}
+              </h3>
+
+              <div class="when">
+                <time class="dtstart" datetime="{{startDate}}">{{formattedStartDate}}</time>{{#formattedEndDate}}–{{/formattedEndDate}}<time class="dtend" datetime="{{endDate}}">{{formattedEndDate}}</time>
+              </div>
+
+              <div class="where location adr">
+                <div class="org">{{venueName}}</div>
+                {{#venueStreetAddress}}
+                <div class="street-address">{{venueStreetAddress}}</div>
+                {{/venueStreetAddress}}
+                {{#venueExtendedAddress}}
+                <div class="extended-address">{{venueExtendedAddress}}</div>
+                {{/venueExtendedAddress}}
+                {{#venueLocality}}
+                <span class="locality">{{venueLocality}}</span>,
+                {{/venueLocality}}
+                {{#venueRegion}}
+                <span class="region">{{venueRegion}}</span><span class="extra_comma">,</span>
+                {{/venueRegion}}
+                {{#venuePostalCode}}
+                <span class="postal-code">{{venuePostalCode}}</span>
+                {{/venuePostalCode}}
+                {{#venueCountry}}
+                <div class="country-name">{{venueCountry}}</div>
+                {{/venueCountry}}
+                {{#coordinates}}
+                <div class="geo">
+                 <abbr class="latitude" title="{{coordinates.latitude}}">{{coordinates.latitude}}</abbr>
+                 <abbr class="longitude" title="{{coordinates.longitude}}">{{coordinates.longitude}}</abbr>
+                </div>
+                {{/coordinates}}
+              </div>
+
+              <a href="{{url}}" class="website-link">Visit Website &rarr;</a>
+            </div>
+          </article>
+        </script>
 
         <script src="js/main.js"></script>
 
