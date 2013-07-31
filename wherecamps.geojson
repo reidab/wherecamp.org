@@ -208,6 +208,90 @@
     {
       "type": "Feature",
       "properties": {
+        "eventName": "WhereCamp Africa 2009",
+        "url": "http://web.archive.org/web/20090223152352/http://www.wherecampafrica.org/",
+        "startDate": "2009-04-04",
+        "endDate":   "2009-04-04",
+        "venueName": "International Livestock Research Institute",
+        "venueStreetAddress": "30709 Naivasha Rd",
+        "venueLocality": "Nairobi",
+        "venueCountry": "Kenya",
+        "color": "#ba182a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.722553,
+          -1.268798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCamp Africa 2010",
+        "url": "http://web.archive.org/web/20100512184912/http://www.wherecampafrica.org/",
+        "startDate": "2010-06-12",
+        "endDate":   "2010-06-12",
+        "venueName": "iHub",
+        "venueStreetAddress": "4th Floor, Bishop Magua Centre, George Padmore Ln",
+        "venueLocality": "Nairobi",
+        "venueCountry": "Kenya",
+        "color": "#f29500"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.7907757,
+          1.2987133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "Barcamp Nairobi / WhereCamp Africa 2011",
+        "url": "http://web.archive.org/web/20111207094016/http://www.wherecampafrica.org/",
+        "startDate": "2011-10-15",
+        "endDate":   "2011-10-15",
+        "venueName": "iHub",
+        "venueStreetAddress": "4th Floor, Bishop Magua Centre, George Padmore Ln",
+        "venueLocality": "Nairobi",
+        "venueCountry": "Kenya",
+        "color": "#1e963e"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.7907757,
+          1.2987133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCamp Africa 2013",
+        "url": "#e81223",
+        "startDate": "2013-3-16",
+        "endDate":   "2013-3-16",
+        "venueName": "IceAddis",
+        "venueStreetAddress": "Chad St",
+        "venueLocality": "Addis Ababa",
+        "venueCountry": "Ethiopia",
+        "color": "#e81223"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.7303885,
+          9.0132686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "eventName": "WhereCampPDX 6",
         "url": "http://wherecamppdx.org",
         "startDate": "2013-09-27",
