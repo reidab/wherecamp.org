@@ -25,6 +25,29 @@
           45.52727616343882
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCampPDX 5",
+        "url": "http://wherecamppdx.org",
+        "startDate": "2012-10-12",
+        "endDate": "2012-10-14",
+        "venueName": "Metro Regional Center",
+        "venueStreetAddress": "600 NE Grand Ave",
+        "venueLocality": "Portland",
+        "venueRegion": "Oregon",
+        "venuePostalCode": "97232",
+        "venueCountry": "USA",
+        "color": "#b42e22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6602292060852,
+          45.52727616343882
+        ]
+      }
     }
   ]
 }
