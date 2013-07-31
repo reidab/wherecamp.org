@@ -48,6 +48,106 @@
           45.52727616343882
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCampPDX 4",
+        "url": "http://wherecamppdx.org",
+        "startDate": "2011-10-07",
+        "endDate": "2011-10-09",
+        "venueName": "Metro Regional Center",
+        "venueStreetAddress": "600 NE Grand Ave",
+        "venueLocality": "Portland",
+        "venueRegion": "Oregon",
+        "venuePostalCode": "97232",
+        "venueCountry": "USA",
+        "color": "#8ccc28",
+        "mapTiles": "wherecamppdx.map-ehuwy6kj",
+        "mapZoom": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6602292060852,
+          45.52727616343882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCampPDX 3",
+        "url": "http://wherecamppdx.org",
+        "startDate": "2010-09-24",
+        "endDate": "2010-09-26",
+        "venueName": "Metro Regional Center",
+        "venueStreetAddress": "600 NE Grand Ave",
+        "venueLocality": "Portland",
+        "venueRegion": "Oregon",
+        "venuePostalCode": "97232",
+        "venueCountry": "USA",
+        "color": "#5f8ea0",
+        "mapTiles": "wherecamppdx.map-4hr2mvzb",
+        "mapZoom": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6602292060852,
+          45.52727616343882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCampPDX 2",
+        "url": "http://wherecamppdx.org",
+        "startDate": "2009-10-02",
+        "endDate": "2009-10-04",
+        "venueName": "Metro Regional Center",
+        "venueStreetAddress": "600 NE Grand Ave",
+        "venueLocality": "Portland",
+        "venueRegion": "Oregon",
+        "venuePostalCode": "97232",
+        "venueCountry": "USA",
+        "color": "#943131",
+        "mapTiles": "toner-lite",
+        "mapZoom": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6602292060852,
+          45.52727616343882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCampPDX 1",
+        "url": "http://wherecamppdx.org",
+        "startDate": "2008-10-17",
+        "endDate": "2008-10-19",
+        "venueName": "Souk",
+        "venueStreetAddress": "322 NW 6th Avenue, Suite 200",
+        "venueLocality": "Portland",
+        "venueRegion": "Oregon",
+        "venuePostalCode": "97209",
+        "venueCountry": "USA",
+        "color": "#500d02",
+        "mapTiles": "wherecamppdx.map-2cznn498",
+        "mapZoom": "14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.676408,
+          45.525626
+        ]
+      }
     }
   ]
 }
