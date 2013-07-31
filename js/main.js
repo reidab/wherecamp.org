@@ -106,9 +106,10 @@ var WhereCamp = (function ($, L) {
 
     map.addControl(new L.Control.Zoom({position: "bottomright"}));
     if($(window).width() > 640) {
-      map.panBy([-1 * (map.getContainer().clientWidth / 6),-50])
+      map.panBy([-1 * (map.getContainer().clientWidth / 6),-50]);
     } else {
-      map.panBy([0,-130])
+      map.panBy([0,-130]);
+      map.dragging.disable();
     }
 
     // var marker = L.marker(venueLatLng).addTo(map);
