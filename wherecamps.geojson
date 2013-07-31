@@ -330,7 +330,7 @@
         "venueName": "The Washington Post",
         "venueStreetAddress": "1150 15th St NW",
         "venueLocality": "Washington",
-        "venueRegion": "District of Columbia",
+        "venueRegion": "DC",
         "venuePostalCode": "20071",
         "venueCountry": "USA",
         "color": "#254c65"
@@ -613,8 +613,8 @@
       "properties": {
         "eventName": "WhereCamp Africa 2013",
         "url": "#e81223",
-        "startDate": "2013-3-16",
-        "endDate":   "2013-3-16",
+        "startDate": "2013-03-16",
+        "endDate":   "2013-03-16",
         "venueName": "IceAddis",
         "venueStreetAddress": "Chad St",
         "venueLocality": "Addis Ababa",
