@@ -129,7 +129,7 @@ var WhereCamp = (function ($, L) {
     var map = new L.Map(mapDiv[0], {
       zoomControl: false
     });
-    map.setView([51.505, -0.09], 2);
+    map.setView([51.505, -0.09], 12);
 
     map.addLayer(layer);
     map.addControl(new L.Control.Zoom({position: "bottomright"}));
@@ -156,11 +156,11 @@ var WhereCamp = (function ($, L) {
   }
 
   function pastMarker(info) {
-    return L.circle([info.coordinates.latitude, info.coordinates.longitude], 500, {
+    return L.circle([info.coordinates.latitude, info.coordinates.longitude], 100, {
         color: info.color,
         fillColor: info.color,
         fillOpacity: 1,
-        opacity: 1
+        opacity: 1,
     })
   }
 
