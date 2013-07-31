@@ -10,7 +10,7 @@ var WhereCamp = (function ($, L) {
   }
 
   function dashify(text) {
-    return text.replace(/ /g,'-');
+    return text.replace(/[^\w]/g,'-');
   };
 
   function sortDate(a,b){
