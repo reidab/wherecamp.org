@@ -104,7 +104,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    background: #eee;
+    background: #fff;
 }
 
 nav a:hover,
@@ -141,7 +141,7 @@ nav a:hover {
 html {
   background-color: #148a6c;
   background-image: url("../img/cartographer_green.png");
-  color: #eeeeee;
+  color: #fff;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-ms-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -265,10 +265,6 @@ a {
 
 .event a {
   text-decoration: none;
-}
-
-.past .event a {
-  text-decoration: underline;
 }
 
 .past .info {
