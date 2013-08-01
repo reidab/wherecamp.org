@@ -158,14 +158,15 @@ header {
   text-align: center;
 }
 
-h2 {
-  font-size: 1.8em;
-}
 
 h1, h2 {
   margin: 0.5em 0 0.2em;
   line-height: 1;
   font-family: "Kelly Slab";
+}
+
+h2 {
+  font-size: 1.8em;
 }
 
 .tagline {
@@ -192,6 +193,10 @@ h1, h2 {
   top: 0;
   left: 0;
   position: absolute;
+}
+
+.upcoming {
+  margin-bottom: 3em;
 }
 
 .past-map {
