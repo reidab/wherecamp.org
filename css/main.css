@@ -179,7 +179,8 @@ h2 {
   color: #092820;
 }
 
-.what-is-wherecamp {
+#add-event-callout,
+#what-is-wherecamp {
   margin: 1em 0 3em;
   padding: 0 1em;
   background: #092820;
@@ -187,6 +188,18 @@ h2 {
   border: 4px solid #092820;
   border: 4px solid rgba(9, 42, 34, 0.9);
 }
+
+#add-event-callout {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 1em 0 3em;
+  padding: .5em 1em;
+}
+
+#add-event-callout a {
+  font-weight: bold;
+}
+
 
 .event, .past-map {
   position: relative;
@@ -202,10 +215,6 @@ h2 {
   top: 0;
   left: 0;
   position: absolute;
-}
-
-.upcoming {
-  margin-bottom: 3em;
 }
 
 .past-map {
