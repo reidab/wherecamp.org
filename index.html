@@ -109,46 +109,48 @@
           </style>
           {{/color}}
 
-          <article id="{{id}}" class="vevent event">
+          <article id="{{id}}" class="h-event vevent event">
             <div class="info clearfix">
               <h3 class="what">
                 {{#url}}
-                <a href="{{url}}" class="url">
+                <a href="{{url}}" class="url u-url">
                 {{/url}}
-                  <span class="summary">{{eventName}}</span>
+                  <span class="summary p-name">{{eventName}}</span>
                 {{#url}}
                 </a>
                 {{/url}}
               </h3>
 
               <div class="when">
-                <time class="dtstart" datetime="{{startDate}}">{{formattedStartDate}}</time>{{#formattedEndDate}}–{{/formattedEndDate}}<time class="dtend" datetime="{{endDate}}">{{formattedEndDate}}</time>
+                <time class="dtstart dt-start"
+                  datetime="{{startDate}}">{{formattedStartDate}}</time>{{#formattedEndDate}}–{{/formattedEndDate}}<time
+                class="dtend dt-end" datetime="{{endDate}}">{{formattedEndDate}}</time>
               </div>
 
-              <div class="where location adr">
-                <div class="org">{{venueName}}</div>
+              <div class="where p-location location adr">
+                <div class="org p-org">{{venueName}}</div>
                 {{#venueStreetAddress}}
-                <div class="street-address">{{venueStreetAddress}}</div>
+                <div class="street-address p-street-address">{{venueStreetAddress}}</div>
                 {{/venueStreetAddress}}
                 {{#venueExtendedAddress}}
-                <div class="extended-address">{{venueExtendedAddress}}</div>
+                <div class="extended-address p-extended-address">{{venueExtendedAddress}}</div>
                 {{/venueExtendedAddress}}
                 {{#venueLocality}}
-                <span class="locality">{{venueLocality}}</span>,
+                <span class="locality p-locality">{{venueLocality}}</span>,
                 {{/venueLocality}}
                 {{#venueRegion}}
-                <span class="region">{{venueRegion}}</span><span class="extra_comma">,</span>
+                <span class="region p-region">{{venueRegion}}</span><span class="extra_comma">,</span>
                 {{/venueRegion}}
                 {{#venuePostalCode}}
-                <span class="postal-code">{{venuePostalCode}}</span>
+                <span class="postal-code p-postal-code">{{venuePostalCode}}</span>
                 {{/venuePostalCode}}
                 {{#venueCountry}}
-                <div class="country-name">{{venueCountry}}</div>
+                <div class="country-name p-country-name">{{venueCountry}}</div>
                 {{/venueCountry}}
                 {{#coordinates}}
-                <div class="geo">
-                 <abbr class="latitude" title="{{coordinates.latitude}}">{{coordinates.latitude}}</abbr>
-                 <abbr class="longitude" title="{{coordinates.longitude}}">{{coordinates.longitude}}</abbr>
+                <div class="geo p-geo">
+                 <abbr class="latitude p-latitude" title="{{coordinates.latitude}}">{{coordinates.latitude}}</abbr>
+                 <abbr class="longitude p-longitude" title="{{coordinates.longitude}}">{{coordinates.longitude}}</abbr>
                 </div>
                 {{/coordinates}}
               </div>
