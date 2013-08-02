@@ -14,7 +14,13 @@ Since 2007, over thirty WhereCamps have been independently organized in fifteen 
 
 That's awesome! We'd love to see it on [wherecamp.org](http://wherecamp.org)!
 
-The easiest way to get your event listed is to [open an issue](https://github.com/reidab/wherecamp.org/issues) with your event information. However, since this is GitHub, we encourage you to add the event yourself following the instructions below. It gives you more control over how your event should appear and is *clearly* more fun. :grinning:
+### How to add your event (the easy way)
+
+The easiest way to get your event listed is to [open an issue](https://github.com/reidab/wherecamp.org/issues) with your event information.
+
+However, since this is GitHub, we encourage you to add the event yourself following the instructions below. It gives you more control over how your event should appear and is *clearly* more fun. :grinning:
+
+And so, we present…
 
 ### How to add your event (the fun GeoJSON way)
 
