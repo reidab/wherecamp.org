@@ -71,21 +71,6 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Grey Theme
-   =================== */
-
-.footer-container {
-    border-top: 20px solid #092820;
-    border-top: 20px solid rgba(9, 42, 34, 0.9);
-}
-
-.footer-container,
-.main aside {
-    background: #0a3d30;
-    background: rgba(9, 42, 34, 0.8);
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -129,7 +114,6 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
     padding: 20px 0;
 }
 
@@ -199,7 +183,6 @@ h2 {
 #add-event-callout a {
   font-weight: bold;
 }
-
 
 .event, .past-map {
   position: relative;
@@ -318,16 +301,17 @@ a {
   display: none;
 }
 
+.footer-container {
+    border-top: 20px solid #092820;
+    border-top: 20px solid rgba(9, 42, 34, 0.9);
+    color: #22d6af;
+}
 
-
-
-
-
-
-
-
-
-
+.footer-container,
+.main aside {
+    background: #0a3d30;
+    background: rgba(9, 42, 34, 0.8);
+}
 
 /* ==========================================================================
    Media Queries
