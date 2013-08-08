@@ -71,7 +71,7 @@
       "type": "Feature",
       "properties": {
         "eventName": "WhereCamp SF 2007",
-        "url": "http://web.archive.org/web/20100605044512/http://wherecamp.pbworks.com/WhereCampSF",
+        "url": "http://wherecamp.pbworks.com/WhereCampSF",
         "startDate": "2007-06-02",
         "endDate":   "2007-06-03",
         "venueName": "Yahoo",
@@ -94,7 +94,7 @@
       "type": "Feature",
       "properties": {
         "eventName": "WhereCamp SF 2008",
-        "url": "http://web.archive.org/web/20101011144559/http://wherecamp.pbworks.com/WhereCamp2008",
+        "url": "http://wherecamp.pbworks.com/WhereCamp2008",
         "startDate": "2008-05-17",
         "endDate":   "2008-05-18",
         "venueName": "Google",
