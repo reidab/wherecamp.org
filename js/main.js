@@ -164,7 +164,7 @@ var WhereCamp = (function ($, L) {
         fillColor: info.color,
         fillOpacity: 1,
         opacity: 1,
-    })
+    }).bindPopup('<a href="'+info.url+'">'+info.eventName+'</a>');
   }
 
 
