@@ -26,7 +26,7 @@ var WhereCamp = (function ($, L) {
       var info = extractEventInfo(feature);
       var eventDiv = $(eventTemplate(info));
 
-      if(moment(info.endDate || 0).isAfter(moment().add('days',1), 'day')) {
+      if(moment(info.endDate || 0).isAfter(moment().subtract('days',1), 'day')) {
         upcoming.append(eventDiv);
         if(info.coordinates) {
           var mapDiv = $('<div class="map"></div>');
