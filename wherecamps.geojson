@@ -632,6 +632,31 @@
     {
       "type": "Feature",
       "properties": {
+        "eventName": "WhereCampPDX 7",
+        "url": "http://wherecamppdx.org",
+        "startDate": "2014-09-12",
+        "endDate": "2013-09-14",
+        "venueName": "Eliot Center",
+        "venueStreetAddress": "1226 SW Salmon Street",
+        "venueLocality": "Portland",
+        "venueRegion": "Oregon",
+        "venuePostalCode": "97205",
+        "venueCountry": "USA",
+        "color": "#13bd16",
+        "mapTiles": "terrain",
+        "mapZoom": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.685999,
+          45.518595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "eventName": "WhereCampPDX 6",
         "url": "http://wherecamppdx.org",
         "startDate": "2013-09-27",
