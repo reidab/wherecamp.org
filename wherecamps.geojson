@@ -1,6 +1,30 @@
 {
   "type": "FeatureCollection",
   "features": [
+     {
+      "type": "Feature",
+      "properties": {
+        "eventName": "WhereCamp Berlin 2015",
+        "url": "http://wherecamp.de",
+        "startDate": "2014-11-26",
+        "endDate": "2014-11-27",
+        "venueName": "Beuth University of Applied Sciences",
+        "venueStreetAddress": "10 Luxemburger Street",
+        "venueLocality": "Berlin",
+        "venuePostalCode": "D-13353",
+        "venueCountry": "Germany",
+        "mapTiles": "watercolor",
+        "mapZoom": 13,
+        "color": "#2090AF"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.352651,
+          52.544395
+        ]
+      }
+    },
     {
       "type": "Feature",
       "properties": {
