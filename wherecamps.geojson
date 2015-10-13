@@ -691,7 +691,7 @@
         "venuePostalCode": "97232",
         "venueCountry": "USA",
         "color": "#6544b2",
-        "mapTiles": "caged.pdx",
+        "mapTiles": "toner",
         "mapZoom": 13
       },
       "geometry": {
